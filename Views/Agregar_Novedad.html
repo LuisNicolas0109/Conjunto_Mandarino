@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    
+    <title>Agregar Novedad</title>
+
+    <link rel="stylesheet" href="CSS/Estilos.css" />
+        
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" />
+
+    <link rel="icon" href="mandarina-icon.ico" />
+</head>
+<body>
+    <header class="Encabezado">
+    
+        <img alt="Logo Mandarino" src="mandarino color ai.png" style="width: 223px; height: 54px; margin-left: 10px;" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        Agregar Novedad
+        <a href="Index.html"><input id="BotonCerrarSesion" type="button" value="Cerrar Sesión" class="boton" /></a>&nbsp;&nbsp;
+         <br />
+         <br />
+         <br />
+         <br />
+     </header>
+
+    <div class="Cuerpo">
+        <br />
+        <a href="javascript:history.go(-1)"><img src="icono_atras.png" width ="30" height="30" border="0" /></a> Volver
+        <br />
+        <br />
+        <div class="Form_AgregarUs">
+            <form>
+                <br />
+                <br />
+                Seleccione el tipo de novedad a reportar
+                <br />
+                <br />
+                <br />
+                <select id="Select_Tipo_Novedad" class="Inputs_AgregarUs">
+                    <option>Administrativa</option>
+                    <option>Social</option>
+                    <option>Infraestructural</option>
+                    <option>Seguridad</option>
+                </select>
+                <br />
+                <br />
+                <br />
+                Indique la fecha de la novedad
+                <br />
+                <br />
+                <br />
+                <input id="Fecha_Novedad" type="date" class="Inputs_AgregarUs"  required="required"/>
+                <br />
+                <br />
+                <br />
+                Indique la hora de la novedad
+                <br />
+                <br />
+                <br />
+                <input id="Hora_Novedad" type="time" class="Inputs_AgregarUs" required="required" />
+                <br />
+                <br />
+                <br />
+                Descripción de la novedad
+                <br />
+                <br />
+                <br />
+                <textarea id="Descripcion_Novedad" cols="50" rows="20" placeholder="Realice una breve descripcion de la novedad" required="required"></textarea>
+                <br />
+                <br />
+                <br />
+                <br />
+                <input id="Submit_Novedad" type="submit" value="Guardar datos" class="btn-guardar-datos"/>
+                <input id="Reset_Novedad" type="reset" value="Borrar datos" class="btn-guardar-datos" />  
+
+            </form>
+
+
+        </div>
+
+        <br /><br /><br />
+
+        <script src="Comportamientos1.js"></script>
+     </div>
+
+    <footer class="Pie">
+            
+            <img alt="Logo-Mand-Footer" src="Mandarino blanco .png" style="width: 158px; height: 40px; margin-left: 620px;" />
+            <br />
+            <p>&nbsp;&nbsp; Conjunto Residencial Mandarino&nbsp;&nbsp;&nbsp; Dirección: Calle 75 #99b-09&nbsp;&nbsp;&nbsp; Celular: +57 3214253852&nbsp;&nbsp;&nbsp; Correo electronico: <a href="mailto:crmandarino@gmail.com">crmandarino@gmail.com</a>  </p>
+            <br />
+            <p>&nbsp;&nbsp; Contacto desarrollador web: Luis Nicolás Pinilla Rodríguez&nbsp;&nbsp;-&nbsp;&nbsp;David Santiago Castillo M&nbsp;&nbsp;&nbsp; Celular: +57 3004001860&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Correo electronico: <a href="mailto:luisnicolaspr@gmail.com">luisnicolaspr@gmail.com</a> </p>
+
+        </footer>
+</body>
+</html>

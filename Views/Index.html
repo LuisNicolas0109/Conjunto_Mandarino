@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <title>Conjunto Residencial Mandarino</title>
+
+    <!--Texto de prueba para fuentes "Hola mundo"-->
+    
+    <link rel="stylesheet" type="text/css" href="CSS/Estilos.css" />
+        
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" />
+
+    <link rel="icon" href="mandarina-icon.ico" />
+    
+</head>
+
+    
+<body style="height: auto; width: 1324px">
+    
+
+    <header class="Encabezado">
+    
+        <a href="Index.aspx"><img alt="Logo Mandarino" src="mandarino color ai.png" style="width: 223px; height: 54px; margin-left: 10px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        <a href="Index.aspx"><input id="BotonInicio" type="button" value="Inicio" class="boton" /></a>
+
+        <a href="Ubicacion.html"><input id="BotonUbicacion" type="button" value="Ubicación" class="boton"/></a>
+
+        <a href="Sobre_Nosotros.html"><input id="BotonNosotros" type="button" value="Sobre Nosotros" class="boton"/></a>
+        <input id="btn-abrir-popup" type="button" value="Iniciar Sesión" class="boton" />
+
+    </header>
+
+    <div class="Cuerpo">
+        <div class="overlay" id="overlay"> 
+            <div class="popup" id="popup">
+                <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+                <h3>Iniciar Sesión</h3>
+                <h4>Digite Usuario y Contraseña</h4>
+                <form action="">
+                    <div class="contenedor-inputs">
+                        <input id="Text1" type="text" placeholder="Usuario" />
+                        <input id="Password1" type="password" placeholder="Contraseña" />
+                    </div>
+                    <input type="button" class="btn-ingresar" value="Ingresar" onclick="iniciar()"/>
+
+                </form>
+            </div>
+        </div>
+        <br />
+        <div class="slider">
+            <ul>
+                <li><img src="slide1.jpg" alt="Imagen 1"/></li>
+                <li><img src="slide2.jpg" alt="Imagen 2"/></li>
+                <li><img src="slide3.jpg" alt="Imagen 3"/></li>
+                <li><img src="slide4.jpg" alt="Imagen 4"/></li>
+            </ul>
+        </div>
+        
+       <script src="JS/Comportamientos1.js"></script>
+       <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+       <script src="JS/sweetAlert.js"></script>
+        </div>
+    
+        <footer class="Pie">
+            
+            <img alt="Logo-Mand-Footer" src="Mandarino blanco .png" style="width: 158px; height: 40px; margin-left: 620px;" />
+            <br />
+            <p>&nbsp;&nbsp; Conjunto Residencial Mandarino&nbsp;&nbsp;&nbsp; Dirección: Calle 75 #99b-09&nbsp;&nbsp;&nbsp; Celular: +57 3214253852&nbsp;&nbsp;&nbsp; Correo electronico: <a href="mailto:crmandarino@gmail.com">crmandarino@gmail.com</a>  </p>
+            <br />
+            <p>&nbsp;&nbsp; Contacto desarrollador web: Luis Nicolás Pinilla Rodríguez&nbsp;&nbsp;-&nbsp;&nbsp;David Santiago Castillo M&nbsp;&nbsp;&nbsp; Celular: +57 3004001860&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Correo electronico: <a href="mailto:luisnicolaspr@gmail.com">luisnicolaspr@gmail.com</a> </p>
+
+        </footer>
+    </body>
+</html>

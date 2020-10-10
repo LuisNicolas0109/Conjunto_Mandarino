@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    
+    <title>Agregar Usuario</title>
+
+    <link rel="stylesheet" href="CSS/Estilos.css" />
+        
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" />
+
+    <link rel="icon" href="mandarina-icon.ico" />
+    <style type="text/css">
+        #Text_Nombres_Usuario {
+            width: 213px;
+            height: 28px;
+        }
+        #Select_Tipo_Usuario {
+            width: 213px;
+            height: 28px;
+        }
+    </style>
+</head>
+<body style="height: 1155px">
+
+    <header class="Encabezado">
+    
+        <img alt="Logo Mandarino" src="mandarino color ai.png" style="width: 223px; height: 54px; margin-left: 10px;" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        Agregar Usuario
+        <a href="Index.html"><input id="BotonCerrarSesion" type="button" value="Cerrar Sesión" class="boton" /></a>&nbsp;&nbsp;
+         <br />
+         <br />
+         <br />
+         <br />
+     </header>
+
+    <div class="Cuerpo">
+        <br />
+        <a href="javascript:history.go(-1)"><img src="icono_atras.png" width ="30" height="30" border="0" /></a> Volver
+        <br />
+        <br />
+            <div class="Form_AgregarUs">
+                <form  action="../Controllers/ControladorUsuario.php" method="POST" autocomplete="off" style="height: 930px">
+                <br />
+                Digite el nombre completo del usuario
+                
+                <br />
+                <input id="Text_Nombre_Usuario" name="Text_Nombre_Usuario" type="text" placeholder="Nombres y Apellidos" class="Inputs_AgregarUs" required="required" maxlength="200"/>
+                <br />
+                <br />
+                Digite el numero de identificación
+                <br />
+                
+                <input id="Text_Identificacion" type="text" name="Text_Identificacion" placeholder="Identificación" required="required" maxlength="11"  class="Inputs_AgregarUs"  onkeypress="return SoloNumeros(event)"/>
+                <br />
+                <br />
+                <div>
+                    Seleccione el tipo de usuario
+                   
+                    <br />
+                    <select id="Select_Tipo_Usuario" name="Select_Tipo_Usuario"  required="required" class="Inputs_AgregarUs">
+                        <option>Administrador</option>
+                        <option>Residente</option>
+                        <option>Vigilante</option>
+                     </select>
+                     <br />
+                     <br />
+                </div>
+                Digite el correo electrónico
+                
+                <br />
+                <input id="Text_Correo_Usuario" type="email" name="Text_Correo_Usuario" placeholder="Correo electrónico" class="Inputs_AgregarUs" maxlength="80" />
+                <br />
+                <br />
+                Digite el número de teléfono
+                <br />
+                
+                <input id="Text_Telefono_Usuario" name="Text_Telefono_Usuario" type="text" placeholder="Número de telefono" required="required" class="Inputs_AgregarUs" onkeypress="return SoloNumeros(event)" maxlength="10" />
+                <br />
+                <br />
+                Digite la dirección de residencia
+                <br />
+               <input id="Text_Direccion_Usuario" name="Text_Direccion_Usuario" type="text" placeholder="Dirección de residencia"  required="required" class="Inputs_AgregarUs" />
+                <br />
+
+                Digite el lugar de nacimiento
+                <br />
+                <input id="Text_LugarNacimiento_Usuario" name="Text_LugarNacimiento_Usuario" type="text" placeholder="Lugar de Nacimiento" class="Inputs_AgregarUs" maxlength="30" />
+                <br />
+                <br />
+                Digite la profesión
+                <br />
+                <input id="Profesion_Usuario" name="Profesion_Usuario" type="text" placeholder="Profesión" required="required" class="Inputs_AgregarUs" maxlength="50" />
+                <br />
+
+                Digite los años de experiencia
+                <br />
+                <input id="Experiencia_Usuario" name="Experiencia_Usuario" type="number" class="Inputs_AgregarUs"  min="2" max="60"/>
+                <br />
+
+                Digite los diferentes titulos o cursos
+                <br />
+                <input id="Titulos_Cursos" name="Titulos_Cursos" type="text" placeholder="Titulos y Cursos" class="Inputs_AgregarUs" maxlength="200" required="required"/>
+                <br />
+                <br />
+               Sexo
+                
+                <select id="Select_Sexo_Usuario" name="Select_Sexo_Usuario" class="Inputs_AgregarUs">
+                    <option>Masculino</option>
+                    <option>Femenino</option>
+                </select> &nbsp;&nbsp;&nbsp;&nbsp;
+                
+
+               Estado civil
+                
+                <select id="Select_Estado_Civil_Usuario" name="Select_Estado_Civil_Usuario" class="Inputs_AgregarUs">
+                    <option>Soltero</option>
+                    <option>Casado</option>
+                    <option>Union Libre</option>
+                </select>
+                <br />
+                <br />
+                EPS
+                
+                <input id="Input_EPS_Usuario" type="text" name="Input_EPS_Usuario" placeholder="EPS" maxlength="20" required="required" class="Inputs_AgregarUs" />&nbsp;&nbsp;&nbsp;&nbsp;
+                 
+
+                Tipo de sangre
+               
+                <input id="Input_Sangre_Usuario" type="text" name="Input_Sangre_Usuario" placeholder="Tipo - RH" maxlength="4" required="required" class="Inputs_AgregarUs" />
+                <br />
+                <br />
+                Cree y digite un nombre de usuario
+                <br />
+                <input id="Text_Crear_Username" type="text" name="Text_Crear_Username" placeholder="Usuario" required="required" class="Inputs_AgregarUs" maxlength="15" />
+                <br />
+                <br />
+                <input id="Contrasena_Usuario" type="text" name="Contrasena_Usuario" placeholder="Contraseña" class="Inputs_AgregarUs" />
+                
+                <input id="Registrado_Por" type="text" name="Registrado_Por" required="required" class=Inputs_AgregarUs/> 
+                <br/>              
+                <input id="Submit_Usuario" type="submit" value="Guardar datos" class="btn-guardar-datos"/>
+                <input id="Reset_Usuario" type="reset" value="Borrar datos" class="btn-guardar-datos" />
+                </form>
+              </div>
+
+        <br />
+        <br />
+
+        <script src="JS/Comportamientos1.js"></script>
+        </div>
+
+    <footer class="Pie">
+            
+            <img alt="Logo-Mand-Footer" src="Mandarino blanco .png" style="width: 158px; height: 40px; margin-left: 620px;" />
+            <br />
+            <p>&nbsp;&nbsp; Conjunto Residencial Mandarino&nbsp;&nbsp;&nbsp; Dirección: Calle 75 #99b-09&nbsp;&nbsp;&nbsp; Celular: +57 3214253852&nbsp;&nbsp;&nbsp; Correo electronico: <a href="mailto:crmandarino@gmail.com">crmandarino@gmail.com</a>  </p>
+            <br />
+            <p>&nbsp;&nbsp; Contacto desarrollador web: Luis Nicolás Pinilla Rodríguez&nbsp;&nbsp;-&nbsp;&nbsp;David Santiago Castillo M&nbsp;&nbsp;&nbsp; Celular: +57 3004001860&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Correo electronico: <a href="mailto:luisnicolaspr@gmail.com">luisnicolaspr@gmail.com</a> </p>
+
+        </footer>
+
+</body>
+</html>

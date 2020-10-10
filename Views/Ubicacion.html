@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+
+    <title>Nuestra Ubicación</title>
+
+    <link rel="stylesheet" type="text/css" href="CSS/Estilos.css" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" />
+
+    <link rel="icon" href="mandarina-icon.ico" />
+</head>
+<body style="height: 1155px; width: 1324px">
+
+   <header class="Encabezado">
+    
+        <a href="Index.html"><img alt="Logo Mandarino" src="mandarino color ai.png" style="width: 223px; height: 54px; margin-left: 10px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        <a href="Index.html"><input id="BotonInicio" type="button" value="Inicio" class="boton" /></a>
+        <a href="Ubicacion.html"><input id="BotonUbicacion" type="button" value="Ubicación" class="boton" /></a>
+        <a href="Sobre_Nosotros.html"><input id="BotonNosotros" type="button" value="Sobre Nosotros" class="boton"/></a>
+        <input id="btn-abrir-popup" type="button" value="Iniciar Sesión" class="boton" />
+
+    </header>
+    <div class="Cuerpo">
+        <div class="overlay" id="overlay">
+            <div class="popup" id="popup">
+                <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+                <h3>Iniciar Sesión</h3>
+                <h4>Digite Usuario y Contraseña</h4>
+                <form action="">
+                    <div class="contenedor-inputs">
+                        <input id="Text1" type="text" placeholder="Usuario" />
+                        <input id="Password1" type="password" placeholder="Contraseña" />
+                    </div>
+                    <input type="button" class="btn-ingresar" value="Ingresar" onclick="iniciar()"/>
+                </form>
+            </div>
+        </div>
+        <div class="TextoUbicacion">
+            <h4>Nuestra Ubicación</h4>
+            <br />
+            <p>
+                Nuestro conjunto se encuentra ubicado en la Calle 75 #89b -09 en la localidad de Engativá, en el barrio Florencia en Bogotá Colombia, Nos encontramos cerca al Colegio Distrital Nidia Quintero de Turbay.&nbsp; Si quiere visitar nuestro conjunto y va en TransMilenio, le recomendamos que tome un servicio con destino Portal 80 y descienda del bus en la estación Quirigua, cruce el puente peatonal y camine por la Calle 76A hasta la Carrera 89B y camine por esta, ahí nos encontrará.</p>
+        </div>
+        
+        <div class="MapaMand">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.396405101563!2d-74.10905018523768!3d4.700998796585462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b4ec90a5a6f%3A0x91b90e91b2c6943b!2sConjunto+Residencial+Mandarino!5e0!3m2!1ses-419!2sco!4v1561776913055!5m2!1ses-419!2sco" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <br /><br /><br /><br /><br />
+
+        <script src="JS/Comportamientos1.js"></script>
+    </div>
+
+    <footer class="Pie">
+            
+            <img alt="Logo-Mand-Footer" src="Mandarino blanco .png" style="width: 158px; height: 40px; margin-left: 620px;" />
+            <br />
+            <p>&nbsp;&nbsp; Conjunto Residencial Mandarino&nbsp;&nbsp;&nbsp; Dirección: Calle 75 #99b-09&nbsp;&nbsp;&nbsp; Celular: +57 3214253852&nbsp;&nbsp;&nbsp; Correo electronico: <a href="mailto:crmandarino@gmail.com">crmandarino@gmail.com</a>  </p>
+            <br />
+            <p>&nbsp;&nbsp; Contacto desarrollador web: Luis Nicolás Pinilla Rodríguez&nbsp;&nbsp;-&nbsp;&nbsp;David Santiago Castillo M&nbsp;&nbsp;&nbsp; Celular: +57 3004001860&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Correo electronico: <a href="mailto:luisnicolaspr@gmail.com">luisnicolaspr@gmail.com</a> </p>
+
+        </footer>
+
+</body>
+</html>

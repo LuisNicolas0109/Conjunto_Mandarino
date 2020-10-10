@@ -1,0 +1,203 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0,
+          maximum-scale=1.0, minimum-scale=1.0" />
+    <title>Menú Principal</title>
+    
+    <link rel="stylesheet" href="CSS/Estilos.css" />
+    <link rel="stylesheet" href="CSS/Estilos_Menu.css" />
+    <link rel="stylesheet" href="CSS/font-awesome.css" />
+    <link rel="icon" href="mandarina-icon.ico" />
+    
+</head>
+<body>
+    <script src="JS/jquery-3.4.1.js"></script>
+    <script src="JS/Comportamientos1.js"></script>
+    <script src="JS/Comportamientos_Menu.js"></script>
+
+    <header class="Encabezado">
+        
+        <img alt="Logo Mandarino" src="mandarino color ai.png" style="width: 223px; height: 54px; margin-left: 10px;" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label>Bienvenido a la Página de Administrador del Conjunto Residencial Mandarino</label>
+        <a href="Index.html"><input id="BotonCerrarSesion" type="button" value="Cerrar Sesión" class="boton" /></a>
+        <br />
+        <br />
+        <span id="button-menu" class="fa fa-bars"></span> Menú
+
+        <nav class="navegacion">
+            <ul class="menu">
+                <!--Titulo del menú-->
+                <li class="title-menu">Todas las gestiones</li>
+                <!--Titulo del menú-->
+
+                <li class="item-submenu" menu="1">
+                    <a href="#"><span class="fa fa-user icon-menu"></span>Usuarios</a>
+
+                    <ul class="submenu">
+                        <!--Titulo del Submenú-->
+                        <li class="title-menu"><span class="fa fa-user icon-menu"></span>Usuarios</li>
+                        <!--Titulo del Submenú-->
+
+                        <li class="go-back">Atrás</li>
+
+                        <li><a href="Agregar_Usuario.html"><span class="fa fa-plus icon-menu"></span>Agregar</a></li>
+                        <li><a href="Consultar_Usuario.html"><span class="fa fa-search icon-menu"></span>Consultar</a></li>
+                        <li><a href="Actualizar_Usuario.html"><span class="fa fa-refresh icon-menu"></span>Actualizar</a></li>
+                        <li><a href="Eliminar_Usuario.html"><span class="fa fa-ban icon-menu"></span>Inhabilitar</a></li>
+
+                    </ul>
+                </li>
+                <li class="item-submenu" menu="2">
+                    <a href="#"><span class="fa fa-building icon-menu"></span>Apartamentos</a>
+                    <ul class="submenu">
+                        <!--Titulo del Submenú-->
+                        <li class="title-menu"><span class="fa fa-building icon-menu"></span>Apartamentos</li>
+                        <!--Titulo del Submenú-->
+
+                        <li class="go-back">Atrás</li>
+
+                        <li><a href="Agregar_Apartamento.html"><span class="fa fa-plus icon-menu"></span>Agregar</a></li>
+                        <li><a href="Consultar_Apartamento.html"><span class="fa fa-search icon-menu"></span>Consultar</a></li>
+                        <li><a href="Actualizar_Apartamento.html"><span class="fa fa-refresh icon-menu"></span>Actualizar</a></li>
+
+                    </ul>
+                </li>
+                <li class="item-submenu" menu="3">
+                    <a href="#"><span class="fa fa-flag icon-menu"></span>Parqueaderos</a>
+                    <ul class="submenu">
+                        <!--Titulo del Submenú-->
+                        <li class="title-menu"><span class="fa fa-flag icon-menu"></span>Parqueaderos</li>
+                        <!--Titulo del Submenú-->
+
+                        <li class="go-back">Atrás</li>
+
+                        <li><a href="Agregar_Parqueadero.html"><span class="fa fa-plus icon-menu"></span>Agregar</a></li>
+                        <li><a href="Consultar_Parqueadero.html"><span class="fa fa-search icon-menu"></span>Consultar</a></li>
+                        <li><a href="Actualizar_Parqueadero.html"><span class="fa fa-refresh icon-menu"></span>Actualizar</a></li>
+
+                    </ul>
+
+                </li>
+                <li class="item-submenu" menu="4">
+                    <a href="#"><span class="fa fa-file-text icon-menu"></span>Novedades</a>
+                    <ul class="submenu">
+                        <!--Titulo del Submenú-->
+                        <li class="title-menu"><span class="fa fa-file-text icon-menu"></span>Novedades</li>
+                        <!--Titulo del Submenú-->
+
+                        <li class="go-back">Atrás</li>
+
+                        <li><a href="Agregar_Novedad.html"><span class="fa fa-plus icon-menu"></span>Agregar</a></li>
+                        <li><a href="Consultar_Novedad.html"><span class="fa fa-search icon-menu"></span>Consultar</a></li>
+                        <li><a href="Actualizar_Novedad.html"><span class="fa fa-refresh icon-menu"></span>Actualizar</a></li>
+                        <li><a href="Eliminar_Novedad.html"><span class="fa fa-ban icon-menu"></span>Inhabilitar</a></li>
+                    </ul>
+                </li>
+                <li class="item-submenu" menu="5">
+                    <a href="#"><span class="fa fa-car icon-menu"></span>Vehículos</a>
+                    <ul class="submenu">
+                        <!--Titulo del Submenú-->
+                        <li class="title-menu"><span class="fa fa-car icon-menu"></span>Vehículos</li>
+                        <!--Titulo del Submenú-->
+
+                        <li class="go-back">Atrás</li>
+
+                        <li><a href="Agregar_Vehiculo.html"><span class="fa fa-plus icon-menu"></span>Agregar</a></li>
+                        <li><a href="Consultar_Vehiculo.html"><span class="fa fa-search icon-menu"></span>Consultar</a></li>
+                        <li><a href="Actualizar_Vehiculo.html"><span class="fa fa-refresh icon-menu"></span>Actualizar</a></li>
+                        <li><a href="Eliminar_Vehiculo.html"><span class="fa fa-ban icon-menu"></span>Inhabilitar</a></li>
+
+                    </ul>
+                </li>
+                <li class="item-submenu" menu="6">
+                    <a href="#"><span class="fa fa-users icon-menu"></span>Visitantes</a>
+                    <ul class="submenu">
+                        <!--Titulo del Submenú-->
+                        <li class="title-menu"><span class="fa fa-users icon-menu"></span>Visitantes</li>
+                        <!--Titulo del Submenú-->
+
+                        <li class="go-back">Atrás</li>
+
+                        <li><a href="Agregar_Visitante.html"><span class="fa fa-plus icon-menu"></span>Agregar</a></li>
+                        <li><a href="Consultar_Visitante.html"><span class="fa fa-search icon-menu"></span>Consultar</a></li>
+                        <li><a href="Actualizar_Visitante.html"><span class="fa fa-refresh icon-menu"></span>Actualizar</a></li>
+
+                    </ul>
+                </li>
+
+
+
+            </ul>
+        </nav>
+
+    </header>
+
+    <div class="Cuerpo">
+
+        <article class="Texto_Menu">
+            <h4>Información sobre el conjunto (Servicios)</h4>
+            <h2>Administración</h2>
+            <hr />
+            <p>
+                La Administración, gestiona los recursos locativos y financieros del conjunto, coordina, apoya y supervisa las diferentes actividades, la seguridad y
+                el aseo del conjunto; atiende observaciones, sugerencias y quejas de los residentes y/o copropietarios y todos los asuntos relacionados con el conjunto.
+                La Administración les atiende con amabilidad y respeto, como usted se lo merece, y espera de usted la misma actitud y respeto, cuando solicite ser atendido(a).
+                <br />
+                <br />
+                <br />
+
+                <b>HORARIOS DE ATENCIÓN</b>
+                <br />
+                Lunes, Miércoles y Viernes: 8:00 a.m. a 2:00 p.m.
+                <br />
+                Martes y Jueves: 2:00 p.m. a 7:00 p.m
+            </p>
+            <img id="Img_Admin" class="Imagenes_Menu" src="Imagen_Admin.jpg" />
+
+            <h2>Salón Comunal</h2>
+            <hr />
+            <p>
+                EL Conjunto Residencial El Cedro, cuenta con un salón social para uso exclusivo de sus residentes, con previa reservación y pago del alquiler.
+                <br />
+                <br />
+                <br />
+                <b>ALQUILER</b>
+                <br />
+                Para alquilarlo,Dirijase a la administración en los horarios de atención.
+            </p>
+            <img id="Img_Salon" class="Imagenes_Menu" src="Img_Salon.jpg" />
+
+            <h2>Portería y Vigilancia</h2>
+            <hr />
+            <p>
+                Se ofrece servicio de portería y vigilancia las 24 horas del día, y los 365 días del año.
+                <br />
+                <br />
+                <br />
+                <b>COMUNICACIÓN</b>
+                <br />
+                Para comunicarse con la porteria marque el numero: 4674505
+            </p>
+            <img id="Img_Porteria" class="Imagenes_Menu" src="Img_Porteria.png" />
+            <br />
+            <br />
+        </article>
+    </div>
+
+
+    <footer class="Pie">
+        <br />
+        <img alt="Logo-Mand-Footer" src="Mandarino blanco .png" style="width: 158px; height: 40px; margin-left: 620px;" />
+        <br />
+        <p>&nbsp;&nbsp; ©2020 Conjunto Residencial Mandarino&nbsp;&nbsp;&nbsp; Dirección: Calle 75 #99b-09&nbsp;&nbsp;&nbsp; Celular: +57 3214253852&nbsp;&nbsp;&nbsp; Correo electronico: <a href="mailto:crmandarino@gmail.com">crmandarino@gmail.com</a>  </p>
+        <br />
+        <p>&nbsp;&nbsp; Contacto desarrollador web: Luis Nicolás Pinilla Rodríguez&nbsp;&nbsp;-&nbsp;&nbsp;David Santiago Castillo M&nbsp;&nbsp;&nbsp; Celular: +57 3004001860&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Correo electronico: <a href="mailto:luisnicolaspr@gmail.com">luisnicolaspr@gmail.com</a> </p>
+
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="JS/sweetAlert.js"></script>
+</body>
+</html>
